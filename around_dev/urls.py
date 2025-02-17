@@ -20,5 +20,5 @@ from landing_page import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.base, name='base'),
+    path('', views.home, name='home'),
 ]
