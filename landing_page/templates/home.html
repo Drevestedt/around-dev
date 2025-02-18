@@ -3,22 +3,27 @@
 <!-- Inherit from base.html -->
 {% extends 'base.html' %}
 
+<!-- Load static files -->
+{% load static %}
+
 <!-- Title -->
 {% block title %}
 <title>around:: Development | Home</title>
 {% endblock %}
 
 <!-- Styles -->
-{% block styles %} {% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/home.css' %}" />
+{% endblock %}
 
 <!-- Main -->
 {% block main %}
 <main>
-  <section id="hero-sec">
+  <section id="hero" class="container text-center mt-4">
     <h1>Welcome to around:: Development</h1>
-    <p class="tag-line">
-      We specialize in creating web applications that are tailored to your
-      needs.
+    <p class="tag-line mt-3 mb-2">
+      My name is Patrik and I specialize in creating web applications that are
+      tailored to your needs.
     </p>
   </section>
 </main>
