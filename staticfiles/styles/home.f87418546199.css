@@ -1,0 +1,40 @@
+/* Hero section */
+#hero {
+  background-color: rgb(48, 25, 52);
+  max-width: 415px;
+  padding: 1rem 0 1rem 0;
+  border-radius: 5px;
+}
+
+#hero h1 {
+  color: rgb(193, 188, 197);
+}
+
+#hero .tag-line {
+  font-size: 1.1rem;
+  color: rgb(193, 188, 197);
+}
+
+.btn-primary {
+  background-color: rgb(138, 43, 226);
+  border: none;
+  color: rgb(193, 188, 197);
+}
+
+.btn-primary:hover {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
+}
+
+/* Responsive design */
+@media screen and (min-width: 768px) {
+  #hero {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #hero {
+    max-width: 800px;
+  }
+}
