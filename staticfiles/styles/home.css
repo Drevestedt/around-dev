@@ -26,6 +26,11 @@
   color: rgb(48, 25, 52);
 }
 
+.btn-primary:active {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
+}
+
 /* Responsive design */
 @media screen and (min-width: 768px) {
   #hero {
