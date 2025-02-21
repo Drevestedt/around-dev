@@ -57,14 +57,21 @@
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1199px) {
   /* Hero section */
   #hero {
-    max-width: 800px;
+    max-width: 540px;
   }
 
   /* Login section */
   #login {
     padding-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Hero section */
+  #hero {
+    max-width: 700px;
   }
 }
