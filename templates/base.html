@@ -22,9 +22,7 @@
     <link rel="stylesheet" href="{% static 'styles/base.css' %}" />
 
     <!-- Title -->
-    {% block title %}
-    <title>around:: Development</title>
-    {% endblock %}
+    <title>around:: Development {% block extra_title %}{% endblock %}</title>
 
     <!-- To be able to inject code from other templates -->
     {% block head %}{% endblock %}
