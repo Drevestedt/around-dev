@@ -1,0 +1,24 @@
+/* Sign Up section */
+#signup {
+  background-color: rgb(48, 25, 52);
+  padding: 1rem 0 1rem 0;
+  border-radius: 5px;
+  max-width: 415px;
+}
+
+/* Menu */
+#signup div {
+  display: none;
+}
+
+#signup h1, p, ul {
+  color: rgb(193, 188, 197);
+}
+
+#signup a {
+  color: rgb(94, 180, 24);
+}
+
+#signup a:hover {
+  color: rgb(139, 184, 102);
+}

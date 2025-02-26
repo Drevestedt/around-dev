@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/signup.css' %}">
+{% endblock %}
+
+{% block content %}
+<section id="signup" class="container text-center mt-4 mt-lg-5">
+  
+    <!-- Inject Allauths Login form -->
+    {% include "allauth/account/signup.html" %}
+
+</section>
+{% endblock %}
