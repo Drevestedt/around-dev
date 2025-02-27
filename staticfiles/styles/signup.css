@@ -4,6 +4,7 @@
   padding: 1rem 0 1rem 0;
   border-radius: 5px;
   max-width: 415px;
+  margin-bottom: 2rem;
 }
 
 /* Text styling */
@@ -13,6 +14,13 @@
 
 #signup h1, p, ul {
   color: rgb(193, 188, 197);
+}
+
+#signup ul {
+  list-style: none;
+  margin-right: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #signup a {
