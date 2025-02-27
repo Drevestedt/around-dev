@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<!-- Inherit from base.html -->
+{% extends 'base.html' %}
+
+<!-- Load static files -->
+{% load static %}
+
+<!-- Title -->
+{% block title %}
+<title>around:: Development | Contact</title>
+{% endblock %}
+
+<!-- Styles -->
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/contact.css' %}">
+{% endblock %}
+
+<!-- Main -->
+{% block main %}
+<main>
+  <h1>Test</h1> <!-- Inject contact form from models -->
+</main>
+{% endblock %}

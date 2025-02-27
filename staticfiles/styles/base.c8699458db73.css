@@ -1,0 +1,67 @@
+/* Google Font import */
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
+
+/* Global Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  -webkit-appearance: none; /* Safari/Chrome */
+  -moz-appearance: none; /* Firefox */
+  appearance: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgb(10, 10, 10), rgb(44, 22, 49));
+  font-family: "Geist Mono", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.bg-body-tertiary {
+  background-color: rgb(48, 25, 52) !important;
+}
+
+.navbar-brand {
+  font-size: x-large;
+  color: rgb(193, 188, 197);
+}
+
+.navbar-brand:hover {
+  color: rgb(94, 180, 24);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Cpath stroke='rgb(193, 188, 197)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+  font-size: large;
+}
+
+.nav-item a {
+  color: rgb(193, 188, 197);
+}
+
+.nav-item a:hover {
+  color: rgb(94, 180, 24);
+}
+
+footer {
+  background-color: rgb(48, 25, 52);
+  color: rgb(193, 188, 197);
+  padding: 1rem;
+  text-align: center;
+}

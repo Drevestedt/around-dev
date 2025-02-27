@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-tb^u&t-8r05$g3w)w5(pox)vb20eemvdt^p(8fgl2*s840vpk7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'landing_page',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -96,8 +97,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
-
+LOGIN_REDIRECT_URL = '/success'
 
 # For WSGI 
 WSGI_APPLICATION = 'around_dev.wsgi.application'
