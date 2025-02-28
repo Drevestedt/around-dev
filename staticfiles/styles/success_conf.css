@@ -1,0 +1,36 @@
+/* Success confirmation section */
+#success_conf {
+  background-color: rgb(48, 25, 52);
+  padding: 1rem 0 1rem 0;
+  border-radius: 5px;
+  max-width: 415px;
+}
+
+/* Text colors */
+#success_conf h1, p {
+  color: rgb(193, 188, 197);
+}
+
+.top-p-tag {
+  margin-top: 1rem;
+}
+
+/* Button */
+#success_conf .btn-primary {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(138, 43, 226);
+  color: rgb(193, 188, 197);
+  font-weight: 400;
+  border: none;
+}
+
+#success_conf .btn-primary:hover {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
+}
+
+#success_conf .btn-primary:active {
+  background-color: rgb(135, 175, 103);
+  color: rgb(48, 25, 52);
+}
