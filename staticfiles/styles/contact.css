@@ -1,3 +1,63 @@
-h1 {
+/* Contact Form section */
+#contact-form {
+  background-color: rgb(48, 25, 52);
+  padding: 1rem 0 1rem 0;
+  border-radius: 5px;
+  max-width: 415px;
+}
+
+#contact-form form {
+  margin-top: 1rem;
+}
+
+#contact-form h1, p {
   color: rgb(193, 188, 197);
+}
+
+label[for="id_name"] {
+  margin-right: 0.7rem;
+}
+
+label[for="id_message"] {
+  margin-bottom: 0.5rem;
+}
+
+/* Form button */
+#contact-form button {
+  background-color: rgb(138, 43, 226);
+  color: rgb(193, 188, 197);
+  padding: 0.375rem 0.7rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+#contact-form button:hover {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
+}
+
+#contact-form button:active {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
+}
+
+/* Responsive design */
+@media screen and (min-width: 992px) {
+  /* CContact Form section */
+  #contact-form {
+    max-width: 600px;
+  }
+
+  p:has(textarea#id_message){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  textarea[name="message"] {
+    margin-top: 0.1rem;
+  }
 }

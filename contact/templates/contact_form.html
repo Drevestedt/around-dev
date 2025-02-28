@@ -7,18 +7,25 @@
 {% load static %}
 
 <!-- Title -->
-{% block title %}
-<title>around:: Development | Contact</title>
+{% block extra_title %}
+  | Contact
 {% endblock %}
 
 <!-- Styles -->
 {% block head %}
-<link rel="stylesheet" href="{% static 'styles/contact.css' %}">
+  <link rel="stylesheet" href="{% static 'styles/contact.css' %}">
 {% endblock %}
 
 <!-- Main -->
 {% block main %}
-<main>
-  <h1>Test</h1> <!-- Inject contact form from models -->
-</main>
+  <main>
+    <section id="contact-form" class="container text-center mt-4 mt-lg-5">
+      <h1>Contact Me</h1>
+      <form method="POST">
+        {% csrf_token %} 
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary mt-3 mb-2">Submit Message</button>
+      </form>
+    </section>
+  </main>
 {% endblock %}

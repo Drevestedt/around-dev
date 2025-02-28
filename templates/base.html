@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Load static files -->
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags for Search Engines -->
+    <meta
+      name="description"
+      content="Professional full-stack web development services. Custom websites, web apps, and e-commerce solutions tailored to your business needs."
+    >
+
+    <meta
+      name="keywords"
+      content="professional, full-stack, custom, website, web apps, e-commerce, gothenburg, sweden, around development"
+    >
 
     <!-- Bootstrap CDN link -->
     <link
@@ -10,19 +24,18 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-    />
-
-    <!-- Load static files -->
-    {% load static %}
+    >
 
     <!-- Favicon -->
-    <link rel="icon" href="/static/images/favicon.png" />
+    <link rel="icon" href="/static/images/favicon.png">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{% static 'styles/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/base.css' %}">
 
     <!-- Title -->
-    <title>around:: Development </title>
+    {% block title %}
+    <title>around:: Development {% block extra_title %}{% endblock %}</title>
+    {% endblock %}
 
     <!-- To be able to inject code from other templates -->
     {% block head %}{% endblock %}
