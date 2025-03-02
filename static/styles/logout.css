@@ -1,0 +1,53 @@
+/* Logout section */
+#logout-section {
+  background-color: rgb(48, 25, 52);
+  padding: 1rem 0 1rem 0;
+  border-radius: 5px;
+  max-width: 415px;
+}
+
+#logout-section h1, p {
+  color: rgb(193, 188, 197);
+}
+
+#logout-section strong {
+  display: none;
+}
+
+#logout-section ul {
+  list-style: none;
+  margin-right: 1.5rem;
+}
+
+#logout-section a[href="/accounts/logout/"] {
+  display: none;
+}
+
+#logout-section a {
+  color: rgb(94, 180, 24);
+}
+
+#logout-section a:hover {
+  color: rgb(139, 184, 102);
+}
+
+/* Logout section button */
+#logout-section button {
+  background-color: rgb(138, 43, 226);
+  color: rgb(193, 188, 197);
+  padding: 0.375rem 0.7rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+#logout-section button:hover {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
+}
+
+#logout-section button:active {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
+}

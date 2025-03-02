@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'styles/logout.css' %}">
+{% endblock %}
+
+{% block content %}
+  <section id="logout-section" class="container text-center mt-4 mt-lg-5">
+
+    <!-- Inject Allauths Logout form -->
+    {% include "allauth/account/logout.html" %}
+
+  </section>
+{% endblock %}
