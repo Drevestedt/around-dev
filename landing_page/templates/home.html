@@ -35,7 +35,11 @@
 
       <!-- Login section -->
        <section id="login" class="col-12 col-lg-6 text-center mt-4 mt-lg-5 ms-lg-auto">
-        <a href="{% url 'account_login' %}" class="btn btn-primary">Login/Create Account</a>
+        {% if user.is_authenticated %}
+          <a href="{% url 'account_logout' %}" class="btn btn-primary">Logout</a>
+        {% else %}
+          <a href="{% url 'account_login' %}" class="btn btn-primary">Login/Create Account</a>
+        {% endif %}
        </section>
     </div>
   </div>
