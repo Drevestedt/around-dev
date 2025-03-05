@@ -1,3 +1,36 @@
 h1 {
+  background-color: rgb(48, 25, 52);
+  padding: 1rem 0 1rem 0;
+  border-radius: 5px;
+  max-width: 415px;
   color: rgb(193, 188, 197);
 }
+
+.project {
+  background-color: rgb(48, 25, 52);
+  border-radius: 5px;
+}
+
+h2, p {
+  color: rgb(193, 188, 197);
+}
+
+.btn-primary {
+    background-color: rgb(138, 43, 226);
+    color: rgb(193, 188, 197);
+    padding: 0.375rem 0.7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 0.375rem;
+    border: none;
+  }
+  
+.btn-primary:hover {
+    background-color: rgb(94, 180, 24);
+    color: rgb(48, 25, 52);
+  }
+  
+.btn-primary:active {
+    background-color: rgb(94, 180, 24);
+    color: rgb(48, 25, 52);
+  }

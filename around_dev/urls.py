@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings 
+from portfolio.views import media_serve 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,3 +26,9 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path('portfolio/', include('portfolio.urls')),
 ]
+
+if settings.DEBUG:
+  urlpatterns += [
+    path('media/<path:path>', media_serve, name='media_serve'),
+  ]
+  

@@ -14,16 +14,16 @@
   <section id="portfolio" class="container mt-4 mt-lg-5 mb-4">
     <div class="row g-4">
       {% for project in projects %}
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-6 col-xl-4">
           <div class="project text-center px-5 py-4"> 
             <h2>{{ project.title }}</h2>
             <p class="mt-3">{{ project.description }}</p>
             {% if project.image %}
-            <img class="mt-1" src="{{ project.image.url }}" alt="{{ project.title }}" width="300" />
+            <img class="mt-1" src="{{ project.image.url }}" alt="{{ project.title }}" width="300" height="140" />
             {% endif %}
             <br>
             {% if project.link %}
-            <a class="btn btn-primary mt-3" href="{{ project.link }}" target="_blank">View Project</a>
+            <a class="btn btn-primary mt-4" href="{{ project.link }}" target="_blank">View Project</a>
             {% endif %}
           </div>
         </div>
