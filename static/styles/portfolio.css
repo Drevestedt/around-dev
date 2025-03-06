@@ -6,6 +6,10 @@ h1 {
   color: rgb(193, 188, 197);
 }
 
+#portfolio img {
+  height: 130px;
+}
+
 .project {
   background-color: rgb(48, 25, 52);
   border-radius: 5px;
@@ -34,3 +38,55 @@ h2, p {
     background-color: rgb(94, 180, 24);
     color: rgb(48, 25, 52);
   }
+
+/* Responsive styling */
+@media screen and (min-width: 992px) {
+  /* Project 1 */
+  .col-12:nth-child(1) .project img {
+    margin-top: 1rem !important;
+  }
+
+  .col-12:nth-child(1) .project a {
+    margin-top: 3rem !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Project 1 */
+  .col-12:nth-child(1) .project img {
+    margin-top: 1rem !important;
+  }
+
+  .col-12:nth-child(1) .project a {
+    margin-top: 3.1rem !important;
+  }
+
+  /* Project 3 */
+  .col-12:nth-child(3) .project img {
+    margin-top: 2rem !important;
+  }
+
+  .col-12:nth-child(3) .project a {
+    margin-top: 4.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* Project 1 */
+  .col-12:nth-child(1) .project img {
+    margin-top: 0.25rem !important;
+  }
+
+  .col-12:nth-child(1) .project a {
+    margin-top: 1.5rem !important;
+  }
+
+  /* Project 3 */
+  .col-12:nth-child(3) .project img {
+    margin-top: 1rem !important;
+  }
+
+  .col-12:nth-child(3) .project a {
+    margin-top: 4.7rem !important;
+  }
+}
