@@ -36,6 +36,14 @@
   max-width: 415px;
 }
 
+/* Featured Projects section */
+h2 {
+  background-color: rgb(48, 25, 52);
+  color: rgb(193, 188, 197);
+  padding: 0.5rem 0 0.5rem 0;
+  border-radius: 5px;
+}
+
 /* Responsive design */
 @media screen and (min-width: 768px) {
   /* Hero section */
