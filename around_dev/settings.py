@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'landing_page',
     'contact',
     'portfolio',
+    'products',
 ]
 
 MIDDLEWARE = [
