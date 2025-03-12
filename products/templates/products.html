@@ -12,7 +12,8 @@
 
 {% block main %}
 <main>
-  <form id="products-form" method="post" action="/products/">
+  <form id="products-form" method="post">
+    {% csrf_token %}
     {{form}}
   </form>
 </main>
