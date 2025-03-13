@@ -8,7 +8,7 @@ SERVICE_CHOICES = [
   ('maintenance', 'Maintenance of Web page/app')
 ]
 
-class SelectService(forms.Forms):
+class SelectService(forms.Form):
   services = forms.MultipleChoiceField(
     choices=SERVICE_CHOICES,
     widget=forms.CheckboxSelectMultiple,

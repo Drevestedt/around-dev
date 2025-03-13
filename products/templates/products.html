@@ -12,9 +12,15 @@
 
 {% block main %}
 <main>
-  <form id="products-form" method="post">
-    {% csrf_token %}
-    {{form}}
-  </form>
+  <section id="products" class="container">
+    <div class="row mt-4 mt-lg-5">
+      <div class="col-12 text-center">
+        <form id="products-form" method="post">
+          {% csrf_token %}
+          {{form}}
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 {% endblock %}
