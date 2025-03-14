@@ -9,7 +9,7 @@ SERVICE_CHOICES = [
 ]
 
 class SelectService(forms.Form):
-  services = forms.MultipleChoiceField(
+  please_choose_one_or_more_services = forms.MultipleChoiceField(
     choices=SERVICE_CHOICES,
     widget=forms.CheckboxSelectMultiple,
     required=False
