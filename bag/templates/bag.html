@@ -1,2 +1,23 @@
-{ % extends 'base.html' % }
+<!-- Inherit from base.html -->
+{% extends 'base.html' %}
 
+<!-- Load static files -->
+{% load static %}
+
+<!-- Page title -->
+{% block extra_title %}
+  | Bag
+{% endblock %}
+
+<!-- Main -->
+{% block main %}
+<main>
+  {% if bag_itmes %}
+    <!-- Just for testing, put items here later -->
+    <p>Here are your items</p>
+  {% else %}
+    <p>Your bag is empty</p>
+    <!-- Add a button to go back to the products page -->
+  {% endif %}
+</main>
+{% endblock %}
