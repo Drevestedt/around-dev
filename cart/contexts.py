@@ -1,12 +1,12 @@
 from django.conf import settings
 
-def bag_content(request):
-  bag_items = []
+def cart_content(request):
+  cart_items = []
   total = 0
   service_count = 0
   
   context = {
-    'bag_items': bag_items,
+    'cart_items': cart_items,
     'total': total,
     'service_count': service_count,
   }

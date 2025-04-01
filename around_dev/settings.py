@@ -52,9 +52,9 @@ INSTALLED_APPS = [
     'landing_page',
     'contact',
     'portfolio',
-    'products',
+    'services',
     'storages',
-    'bag',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +82,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'bag.contexts.bag_content',
+                'cart.contexts.cart_content',
             ],
         },
     },

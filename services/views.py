@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .forms import SelectService
 
-def products(request):
+def services(request):
   form = SelectService()
-  return render(request, 'products.html', {'form':form})
+  return render(request, 'services.html', {'form':form})

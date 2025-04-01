@@ -6,7 +6,7 @@
 
 <!-- Page title -->
 {% block extra_title %}
-  | Bag
+  | Cart 
 {% endblock %}
 
 <!-- Main -->
@@ -14,11 +14,11 @@
 <main>
   <h1>Your chosen services: </h1>
 
-  {% if bag_itmes %}
+  {% if cart_itmes %}
     <!-- Just for testing, put items here later -->
     <p>Here are your items</p>
   {% else %}
-    <p>Your bag is empty</p>
+    <p>Your cart is empty</p>
     <!-- Add a button to go back to the products page -->
   {% endif %}
 </main>
