@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
-def view_cart(request):
+def cart(request):
     return render(request, 'cart.html')
 
