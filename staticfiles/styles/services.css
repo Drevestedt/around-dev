@@ -1,4 +1,4 @@
-/* Products section */
+/* Services section */
 .col-12 {
   background-color: rgb(48, 25, 52);
   padding: 1rem 0 1rem 0;
@@ -17,4 +17,21 @@ h1 {
 /* Product form */
 #services-form label {
   color: rgb(193, 188, 197);
+}
+
+/* Services form button */
+.btn-primary {
+  background-color: rgb(138, 43, 226);
+  border: none;
+  color: rgb(193, 188, 197);
+}
+
+.btn-primary:hover {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
+}
+
+.btn-primary:active {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
 }

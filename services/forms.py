@@ -1,4 +1,5 @@
 from django import forms
+from .models import Service
 
 SERVICE_CHOICES = [
   ('consultation', 'Consultation'),
@@ -10,7 +11,7 @@ SERVICE_CHOICES = [
 
 class SelectService(forms.Form):
   please_choose_one_or_more_services = forms.MultipleChoiceField(
-    choices=SERVICE_CHOICES,
+    choices=[]
     widget=forms.CheckboxSelectMultiple,
     required=False
   )
