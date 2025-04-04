@@ -10,7 +10,7 @@ class Service(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
 class Cart(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    services = models.ManyToManyField(Service)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)  # Optional: For logged-in users
+    services = models.ManyToManyField(Service)  # Link to the Service model
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

@@ -15,11 +15,16 @@
   <h1>Your chosen services: </h1>
 
   {% if cart_itmes %}
-    <!-- Just for testing, put items here later -->
-    <p>Here are your items</p>
+    <ul>
+      {% for service in services %}
+        <li>
+          {{ service.name}}
+        </li>
+      {% endfor %}
+    </ul>
   {% else %}
     <p>Your cart is empty</p>
-    <!-- Add a button to go back to the products page -->
   {% endif %}
+  <a href="{% url 'services' %}">Add more services</a>
 </main>
 {% endblock %}

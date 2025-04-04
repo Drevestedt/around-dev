@@ -15,10 +15,12 @@ def add_to_cart(request):
       # Create a new cart or get the existing one for the user
       if request.user.is_authenticated:
         cart, created = Cart.objects.get_or_create(user=request.user)
+      else:
+        # For anonymous users, create a new cart without a user
+        cart, created = Cart.objects.get_or_create(user=None)
 
       # Add the selected services to the cart
-      for service in selected_services:
-        cart.services.add(service)
+      cart.services.add(*selected_services)
 
   else:
     form = SelectService()
