@@ -1,11 +1,11 @@
 from django import forms
 
 SERVICE_CHOICES = [
-  ('consultation', 'Consultation'),
-  ('fullstack', 'Fullstack Web page/app'),
-  ('frontend', 'Frontend Web page/app'),
-  ('backend', 'Backend project'),
-  ('maintenance', 'Maintenance of Web page/app')
+  (1, 'Consultation'),
+  (2, 'Fullstack Web page/app'),
+  (3, 'Frontend Web page/app'),
+  (4, 'Backend project'),
+  (5, 'Maintenance of Web page/app')
 ]
 
 class SelectService(forms.Form):

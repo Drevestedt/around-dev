@@ -3,14 +3,16 @@ from .forms import SelectService
 from .models import Service, Cart
 
 def add_to_cart(request):
-  if request.method == 'post':
+  if request.method == 'POST':
     form = SelectService(request.POST)
     if form.is_valid():
       # Get the selected service IDs  
-      selected_service_ids = form.cleaned_data['please_choose_one_or_more_services']
+      selected_service_ids = list(map(int, form.cleaned_data['please_choose_one_or_more_services']))
+      print("Selected service IDs:", selected_service_ids)
 
       # Retrieve the selected services from the database
       selected_services = Service.objects.filter(id__in=selected_service_ids)
+      print("Selected services:", selected_services)
 
       # Create a new cart or get the existing one for the user
       if request.user.is_authenticated:
