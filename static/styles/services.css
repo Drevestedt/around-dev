@@ -14,7 +14,19 @@ h1 {
   color: rgb(193, 188, 197);
 }
 
-/* Product form */
+/* Service form */
+
+#id_please_choose_one_or_more_services div{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    padding-left: 9%;
+}
+
+input[type="checkbox"] {
+  accent-color: rgb(94, 180, 24);
+}
+
 #services-form label {
   color: rgb(193, 188, 197);
 }
