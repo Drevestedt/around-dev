@@ -18,44 +18,57 @@
 
 <!-- Main -->
 {% block main %}
-<main>
-  <!-- Hero and login section -->
-  <div class="container">
-    <div class="row justify-content-center justify-content-lg-start">
+  <main>
+    <!-- Hero and login section -->
+    <div class="container">
+      <div class="row justify-content-center justify-content-lg-start">
 
-      <!-- Hero section -->
-      <section id="hero" class="col-12 text-center mt-4 mt-lg-5">
-        <h1>Welcome to around:: Development</h1>
-        <p class="tag-line mt-3 mb-2">
-          My name is Patrik and I specialize in creating web applications that
-          are tailored to your needs.
-        </p>
-        <a href="{% url 'services' %}" class="btn btn-primary mt-3 mb-2">Services</a>
-      </section>
+        <!-- Hero section -->
+        <section id="hero" class="col-12 text-center mt-4 mt-lg-5">
+          <h1>Welcome to around:: Development</h1>
+          <p class="tag-line mt-3 mb-2">
+            My name is Patrik and I specialize in creating web applications that
+            are tailored to your needs.
+          </p>
+          <a href="{% url 'services' %}" class="btn btn-primary mt-3 mb-2">Services</a>
+        </section>
 
-      <!-- Login section -->
-       <section id="login" class="col-12 col-lg-6 text-center mt-4 mt-lg-5 ms-lg-auto">
-        {% if user.is_authenticated %}
-          <a href="{% url 'account_logout' %}" class="btn btn-primary">Logout</a>
-        {% else %}
-          <a href="{% url 'account_login' %}" class="btn btn-primary">Login/Create Account</a>
-        {% endif %}
-       </section>
-    </div>
-
-    <!-- Featured Projects section -->
-     <!-- Header Row -->
-    <div class="row">
-      <div class="col-12 col-lg-6 mt-4 mt-lg-5 text-center">
-        <h2>Featured Projects:</h2>
+        <!-- Login section -->
+        <section id="login" class="col-12 col-lg-6 text-center mt-4 mt-lg-5 ms-lg-auto">
+          {% if user.is_authenticated %}
+            <a href="{% url 'account_logout' %}" class="btn btn-primary">Logout</a>
+          {% else %}
+            <a href="{% url 'account_login' %}" class="btn btn-primary">Login/Create Account</a>
+          {% endif %}
+        </section>
       </div>
-      <div class="col-12 col-lg-6"></div>
-    </div>
 
-    <!-- Display Row -->
-    <div class="row">
-      
+      <!-- Featured Projects section -->
+      <!-- Header Row -->
+      <div class="row">
+        <section class="col-12 col-lg-6 mt-4 mt-lg-5 text-center">
+          <h2>Featured Projects:</h2>
+        </section>
+      </div>
+
+      <!-- Display Row -->
+        <div class="row g-4">
+          {% for project in projects %}
+            <div class="col-12 col-lg-6 col-xl-4">
+              <div class="project text-center px-5 py-4">
+                <h2>{{ project.title }}</h2>
+                <p class="mt-3">{{ project.description }}</p>
+                {% if project.image %}
+                <img class="img-fluid mt-1" src="{{ project.image.url }}" alt="{{ project.title }}">
+                {% endif %}
+                <br>
+                {% if project.link %}
+                <a class="btn btn-primary mt-4" href="{{ project.link }}" target="_blank">View Project</a>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 {% endblock %}

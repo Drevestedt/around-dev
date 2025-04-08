@@ -5,3 +5,4 @@ class Project(models.Model):
   description = models.TextField()
   image = models.ImageField(upload_to="projects/")
   link = models.URLField(blank=True, null=True)
+  featured = models.BooleanField(default=False)
