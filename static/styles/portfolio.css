@@ -22,7 +22,6 @@ h2, p {
 .btn-primary {
     background-color: rgb(138, 43, 226);
     color: rgb(193, 188, 197);
-    padding: 0.375rem 0.7rem;
     font-weight: 400;
     line-height: 1.5;
     border-radius: 0.375rem;
@@ -42,51 +41,21 @@ h2, p {
 /* Responsive styling */
 @media screen and (min-width: 992px) {
   /* Project 1 */
-  .col-12:nth-child(1) .project img {
-    margin-top: 1rem !important;
-  }
-
-  .col-12:nth-child(1) .project a {
-    margin-top: 3rem !important;
-  }
+  
 }
 
 @media screen and (min-width: 1200px) {
   /* Project 1 */
-  .col-12:nth-child(1) .project img {
-    margin-top: 1rem !important;
-  }
-
-  .col-12:nth-child(1) .project a {
-    margin-top: 3.1rem !important;
-  }
+  
 
   /* Project 3 */
-  .col-12:nth-child(3) .project img {
-    margin-top: 2rem !important;
-  }
-
-  .col-12:nth-child(3) .project a {
-    margin-top: 4.5rem !important;
-  }
+  
 }
 
 @media screen and (min-width: 1400px) {
   /* Project 1 */
-  .col-12:nth-child(1) .project img {
-    margin-top: 0.25rem !important;
-  }
-
-  .col-12:nth-child(1) .project a {
-    margin-top: 1.5rem !important;
-  }
+  
 
   /* Project 3 */
-  .col-12:nth-child(3) .project img {
-    margin-top: 1rem !important;
-  }
-
-  .col-12:nth-child(3) .project a {
-    margin-top: 4.7rem !important;
-  }
+  
 }
