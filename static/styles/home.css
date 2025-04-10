@@ -44,6 +44,19 @@ h2 {
   border-radius: 5px;
 }
 
+#portfolio img {
+  height: 130px;
+}
+
+.project {
+  background-color: rgb(48, 25, 52);
+  border-radius: 5px;
+}
+
+p {
+  color: rgb(193, 188, 197);
+}
+
 /* Responsive design */
 @media screen and (min-width: 768px) {
   /* Hero section */

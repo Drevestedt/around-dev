@@ -20,7 +20,8 @@
               <h2>{{ project.title }}</h2>
               <p class="mt-3">{{ project.description }}</p>
               {% if project.image %}
-                <img class="img-fluid {% if project.title == 'Meat Hook' %}mt-5{% else %}mt-1{% endif %}" style="margin-top: 5rem;"
+                <img class="img-fluid {% if project.title == 'Meat Hook' %}mt-2 mt-lg-3 mt-xl-4{% else %}mt-1{% endif %}
+                                      {% if project.title == 'Dallas Cats & Dogs' %}mt-2 mt-xl-3{% endif %}"
                 src="{{ project.image.url }}" alt="{{ project.title }}">
               {% endif %}
             </div>

@@ -37,25 +37,3 @@ h2, p {
     background-color: rgb(94, 180, 24);
     color: rgb(48, 25, 52);
   }
-
-/* Responsive styling */
-@media screen and (min-width: 992px) {
-  /* Project 1 */
-  
-}
-
-@media screen and (min-width: 1200px) {
-  /* Project 1 */
-  
-
-  /* Project 3 */
-  
-}
-
-@media screen and (min-width: 1400px) {
-  /* Project 1 */
-  
-
-  /* Project 3 */
-  
-}
