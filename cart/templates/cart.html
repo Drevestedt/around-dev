@@ -24,13 +24,9 @@
     <div class="row text-center mt-3">
       <div class="col-12">
         {% if cart_items %}
-          <ul>
-            {% for service in services %}
-            <li>
-              {{ service.name}}
-            </li>
-            {% endfor %}
-          </ul>
+          {% for item in cart_items %}
+            <p>{{ item.name }}</p>
+          {% endfor %}
         {% else %}
           <p>Your cart is empty</p>
         {% endif %}
