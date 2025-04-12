@@ -70,10 +70,10 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'contact' %}">Contact</a>
             </li>
-            <li class="nav-item">
+            <li id="cart-link" class="nav-item">
               <a class="nav-link" href="{% url 'cart' %}">Cart
-                {% if cart_item_count > 0 %}
-                  <span class="badge bg-danger">{{ cart_item_count }}</span>
+                {% if cart_item_count %}
+                  <span class="badge">{{ cart_item_count }}</span>
                 {% endif %}
               </a>
             </li>
