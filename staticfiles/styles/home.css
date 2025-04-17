@@ -44,6 +44,10 @@ h2 {
   border-radius: 5px;
 }
 
+#featured-projects {
+  margin-top: 3%;
+}
+
 #portfolio img {
   height: 130px;
 }
@@ -94,5 +98,10 @@ p {
   /* Hero section */
   #hero {
     max-width: 700px;
+  }
+
+  /* Featured section */
+  #featured-projects {
+    margin-top: 2%;
   }
 }

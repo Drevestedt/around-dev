@@ -71,9 +71,9 @@
               <a class="nav-link" href="{% url 'contact' %}">Contact</a>
             </li>
             <li id="cart-link" class="nav-item">
-              <a class="nav-link" href="{% url 'cart' %}">Cart
-                {% if cart_item_count %}
-                  <span class="badge">{{ cart_item_count }}</span>
+              <a class="nav-link" href="{% url 'cart' %}"><i class="fa-solid fa-cart-shopping"></i>
+                {% if cart_item_price %}
+                  <span class="badge">from ${{ cart_item_price | floatformat:2 }}/h</span>
                 {% endif %}
               </a>
             </li>
@@ -98,5 +98,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Font Awesome JS link -->
+    <script src="https://kit.fontawesome.com/b39e6ae36f.js" crossorigin="anonymous"></script>
   </body>
 </html>

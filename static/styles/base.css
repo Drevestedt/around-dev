@@ -54,15 +54,6 @@ main {
   color: rgb(94, 180, 24);
 }
 
-#cart-link {
-  background-color: rgb(138, 43, 226);
-  border-radius: 3px;
-}
-
-#cart-link .badge {
-  padding: 0;
-}
-
 /* Footer */
 footer {
   background-color: rgb(48, 25, 52);

@@ -24,6 +24,7 @@ main {
   background-color: rgb(48, 25, 52) !important;
 }
 
+/* Navbar */
 .navbar-brand {
   font-size: x-large;
   color: rgb(193, 188, 197);
@@ -53,6 +54,7 @@ main {
   color: rgb(94, 180, 24);
 }
 
+/* Footer */
 footer {
   background-color: rgb(48, 25, 52);
   color: rgb(193, 188, 197);
