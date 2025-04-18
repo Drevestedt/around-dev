@@ -71,9 +71,17 @@
               <a class="nav-link" href="{% url 'contact' %}">Contact</a>
             </li>
             <li id="cart-link" class="nav-item">
-              <a class="nav-link" href="{% url 'cart' %}"><i class="fa-solid fa-cart-shopping"></i>
+              <a class="nav-link" href="{% url 'cart' %}">
+                <span class="position-relative">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  {% if cart_item_count > 0 %}
+                    <span id="pill-badge" class="position-absolute top-0 start-50 badge rounded-pill">
+                      {{ cart_item_count }}
+                    </span>
+                  {% endif %}
+                </span>
                 {% if cart_item_price %}
-                  <span class="badge">from ${{ cart_item_price | floatformat:2 }}/h</span>
+                  <span id="price-badge" class="badge">from ${{ cart_item_price | floatformat:2 }}/h</span>
                 {% endif %}
               </a>
             </li>

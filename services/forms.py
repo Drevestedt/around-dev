@@ -3,7 +3,7 @@ from .models import Service
 
 class SelectService(forms.Form):
   please_choose_one_or_more_services = forms.ModelMultipleChoiceField(
-    queryset=Service.objects.none(), # This will be set in __init__ below
+    queryset=Service.objects.none(), # This will be set in __init__ function below
     widget=forms.CheckboxSelectMultiple,
     required=False,
   )

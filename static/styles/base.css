@@ -54,6 +54,24 @@ main {
   color: rgb(94, 180, 24);
 }
 
+/* Navbar Cart */
+#cart-link .nav-link {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+#pill-badge {
+  background-color: rgb(94, 180, 24);
+  color: rgb(47, 19, 73);
+  margin-top: -0.4rem;
+  padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+}
+
+#price-badge {
+  margin-left: 0;
+  padding: 0;
+}
+
 /* Footer */
 footer {
   background-color: rgb(48, 25, 52);
