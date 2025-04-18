@@ -22,6 +22,8 @@ def add_to_cart(request):
       # Add the selected services to the cart
       cart.services.add(*selected_services)
 
+      return redirect('services')
+
   else:
     form = SelectService()
 

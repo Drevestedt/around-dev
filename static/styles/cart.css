@@ -26,3 +26,19 @@ p {
   background-color: rgb(94, 180, 24);
   color: rgb(48, 25, 52);
 }
+
+.btn-sm {
+  background-color: rgb(138, 43, 226);
+  border: none;
+  color: rgb(193, 188, 197);
+}
+
+.btn-sm:hover {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
+}
+
+.btn-sm:active {
+  background-color: rgb(94, 180, 24);
+  color: rgb(48, 25, 52);
+}
