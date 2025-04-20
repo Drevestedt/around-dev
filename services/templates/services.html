@@ -4,6 +4,7 @@
 
 {% block head %}
 <link rel="stylesheet" href="{% static 'styles/services.css' %}">
+<script src="{% static 'scripts/services.js' %}" defer></script>
 {% endblock %}
 
 {% block extra_title %}
@@ -21,7 +22,8 @@
         <form id="services-form" method="POST">
           {% csrf_token %}
           {{form}}
-          <button type="submit" class="btn btn-primary mt-3">Add to cart</button>
+          <button type="submit" class="btn btn-primary mt-5 mx-3">Add to cart</button>
+          <a class="btn btn-primary mt-5 mx-3" href="{% url 'cart' %}">Go to cart</a>
         </form>
       </div>
     </div>

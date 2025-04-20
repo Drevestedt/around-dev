@@ -31,6 +31,11 @@ input[type="checkbox"] {
   color: rgb(193, 188, 197);
 }
 
+.header-label {
+  font-weight: 500;
+  font-size: large;
+}
+
 /* Services form button */
 .btn-primary {
   background-color: rgb(138, 43, 226);
