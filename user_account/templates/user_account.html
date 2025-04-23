@@ -1,0 +1,21 @@
+<!-- Inherit from base.html -->
+{% extends 'base.html' %}
+
+<!-- Load static files -->
+{% load static %}
+
+<!-- Title -->
+{% block extra_title %}
+  | Account
+{% endblock %}
+
+<!-- Styles -->
+{% block head %}
+  <link rel="stylesheet" href="{% static 'styles/user_account.css' %}">
+{% endblock %}
+
+{% block main %}
+  <main>
+    {{ dashboard }}
+  </main>
+{% endblock %}
