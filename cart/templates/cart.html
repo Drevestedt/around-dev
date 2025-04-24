@@ -37,7 +37,12 @@
           <p>Your cart is empty</p>
         {% endif %}
         <a class="btn btn-primary mt-5 mx-3" href="{% url 'services' %}">Add more services</a>
-        <a class="btn btn-primary mt-5 mx-3" href="{% url 'user_account' %}">Add to your account</a>
+        <form method="POST" action="{% url 'add_services_to_account'%}">
+          {% csrf_token %}
+          <input type="hidden" name="service" value="Consultation"> #TODO: Change to be dynamically inserted
+          <input type="hidden" name="rate" value="45.00">           #TODO: Change to be dynamically inserted
+          <button type="submit" class="btn btn-primary mt-5 mx-3" href="#">Add to your account</button>
+        </form>
        </div>
     </div>
   </section>

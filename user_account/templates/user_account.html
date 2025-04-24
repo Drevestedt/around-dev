@@ -16,6 +16,10 @@
 
 {% block main %}
   <main>
-    {{ dashboard }}
+    {% for s in services %}
+      <p>{{ s.service  }} - ${{ s.rate }}/h</p>
+    {% empty %}
+      <p>No services added yet.</p>
+    {% endfor %}
   </main>
 {% endblock %}
